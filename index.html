@@ -14,7 +14,7 @@
 HTTP/1.1 200 OK
 Content-Type: text/html>
 
-<html lang="es-MX" Content-Type="text/html" Content-Security-Policy="img-src" icons.example.com>
+<html lang="es-MX" Content-Type="text/html" Content-Security-Policy="img-src" >
 
 <title>Destinos | Viajes gay Xiiber</title>
 <meta name=" description " content="Xiiber, experiencias y viajes gay en México. Puedes viajar solo, con amigos, el novio, amante, con quien quieras. El objetivo es que la pases bien a tu manera, que disfrutes el tiempo para consentirte, conocer lugares
@@ -353,7 +353,175 @@ Content-Type: text/html>
 <body>
 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <style>@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+      .main-wrapper {
+        font-size: 15vmin;
+        /*background-color: #ffffff;*/
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .signboard-wrapper {
+        width: 75vmin;
+        height: 55vmin;
+        margin: 20px;
+        position: relative;
+        flex-shrink: 0;
+        transform-origin: center 2.5vmin;
+        animation: 1000ms init forwards, 1000ms init-sign-move ease-out 1000ms, 3000ms sign-move 2000ms infinite;
+      }
+      .signboard-wrapper .signboard {
+        color: #ffffff;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        background-color: #2558ff;
+        width: 100%;
+        height: 35vmin;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        border-radius: 4vmin;
+        text-shadow: 0 -0.015em #be2b00;
+        box-shadow: 0 2vmin 4vmin 1vmin rgba(107, 107, 107, 0.8);
+      }
+      .signboard-wrapper .sg{
+        color: #ffffff;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        line-height: 2px;
+        width: 100%;
+        height: 10vmin;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        border-radius: 4vmin;
+        text-shadow: 0 -0.015em #be2b00;
+        margin-bottom: 5px;
+        
+      }
+      .signboard-wrapper .sg{
+        color: #ffffff;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        line-height: 2px;
+        width: 100%;
+        height: 10vmin;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        border-radius: 4vmin;
+        text-shadow: 0 -0.015em #be2b00;
+        margin-bottom: 5px;
+        
+      }
+    
+      .signboard-wrapper .sg1{
+        color: #ffffff;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        line-height: 30px;
+        width: 100%;
+        height: 10vmin;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        border-radius: 4vmin;
+        text-shadow: 0 -0.015em #be2b00;
+        margin-bottom: 0px;
+        
+      }
+      .signboard-wrapper .string {
+        width: 30vmin;
+        height: 30vmin;
+        border: solid 0.9vmin #020089;
+        border-bottom: none;
+        border-right: none;
+        position: absolute;
+        left: 50%;
+        transform-origin: top left;
+        transform: rotate(45deg);
+      }
+      .signboard-wrapper .pin {
+        width: 5vmin;
+        height: 5vmin;
+        position: absolute;
+        border-radius: 50%;
+      }
+      .signboard-wrapper .pin.pin1 {
+        background-color: #9f9f9f;
+        top: 0;
+        left: calc(50% - 2.5vmin);
+      }
+      .signboard-wrapper .pin.pin2, .signboard-wrapper .pin.pin3 {
+        background-color: #000ed8;
+        top: 21.5vmin;
+      }
+      .signboard-wrapper .pin.pin2 {
+        left: 13vmin;
+      }
+      .signboard-wrapper .pin.pin3 {
+        right: 13vmin;
+      }
+      
+      @keyframes init {
+        0% {
+          transform: scale(0);
+        }
+        40% {
+          transform: scale(1.1);
+        }
+        60% {
+          transform: scale(0.9);
+        }
+        80% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      @keyframes init-sign-move {
+        100% {
+          transform: rotate(3deg);
+        }
+      }
+      @keyframes sign-move {
+        0% {
+          transform: rotate(3deg);
+        }
+        50% {
+          transform: rotate(-3deg);
+        }
+        100% {
+          transform: rotate(3deg);
+        }
+      }</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
+    <div class="main-wrapper">
+      <div class="signboard-wrapper">
+        <div class="signboard">CERRADO<br></div>
+        <div class="sg" style="font-size: 4vmin;" onclick="document.location='https://www.xiiber.com'">por el momento... ¡volveremos!</div>
+        <div class="string"></div>
+        <div class="pin pin1"></div>
+        <div class="pin pin2"></div>
+        <div class="pin pin3"></div>
+      </div>
+    </div>
+
+    
     <!-- Navbar -->
     <a onclick="document.getElementById( 'ticketModal').style.display='block' "><img src="https://www.xiiber.com/sgv/elipsis.webp " class="w3-hover-opacity " alt="Xiiber Travel " width="33w " height="33w " title="Viajes Xiiber " style="position:fixed;top:60px;right:40px; "></a>
     <!-- Navbar Modal -->
@@ -465,7 +633,3 @@ if ('serviceWorker' in navigator) {
 </script>
 
 </body>
-
-</html>
-
-</html>
